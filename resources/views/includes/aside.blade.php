@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4" style="min-height: 100vh; background-color: white;">
     <!-- Brand Logo -->
     <a href="{{ url('/') }}" class="brand-link">
-      <i class="fa fa-user"></i> 
+      <i class="fa fa-cog"></i>
       <span class="brand-text font-weight-light">Gestion de congé</span>
     </a>
     <!-- Sidebar -->
@@ -23,7 +23,7 @@
                with font-awesome or any other icon font library -->
                <li class="nav-item ">
             <a href="{{ url('users') }}" class="nav-link {{ Request::is('admin/users') ? 'active' : '' }} ">
-              <i class="nav-icon fa fa-dashboard"></i>
+              <i class="fa fa-bars"></i>
               <p>
                 Les utilisateurs
               </p>
@@ -31,7 +31,7 @@
           </li>
           <li class="nav-item ">
             <a href="{{ url('employes') }}" class="nav-link {{ Request::is('employes') ? 'active' : '' }} ">
-              <i class="nav-icon fa fa-dashboard"></i>
+              <i class="fa fa-users"></i>
               <p>
                 Employés
               </p>
@@ -47,7 +47,7 @@
           </li>
           <li class="nav-item ">
             <a href="{{ url('secretaires')}}" class="nav-link {{ Request::is('secretaires') ? 'active' : '' }}">
-              <i class="nav-icon fa fa-pie-chart"></i>
+              <i class="fa fa-tasks"></i>
               <p>
                 Secretaires
               </p>
@@ -61,10 +61,10 @@
               </p>
             </a>
           </li>
-          
+
           <li class="nav-item ">
             <a href="{{ url('contacts')}}" class="nav-link {{ Request::is('admin/contacts') ? 'active' : '' }}">
-              <i class="nav-icon fa fa-table"></i>
+              <i class="fa fa-envelope-open"></i>
               <p>
                 Contacts
               </p>
@@ -72,7 +72,7 @@
           </li>
           <li class="nav-item ">
             <a href="{{ url('droits')}}" class="nav-link {{ Request::is('admin/contacts') ? 'active' : '' }}">
-              <i class="nav-icon fa fa-table"></i>
+              <i class="fa fa-lightbulb-o"></i>
               <p>
                 Droit de congés
               </p>
@@ -98,7 +98,7 @@
             <a href="{{ url('soldes') }}" class="nav-link {{ Request::is('soldes') ? 'active' : '' }} ">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
-                Solde des employés 
+                Solde des employés
               </p>
             </a>
           </li>
@@ -161,7 +161,7 @@
           <!--  -->
           <li class="nav-item ">
             <a href="{{ url('contacts')}}" class="nav-link {{ Request::is('contacts') ? 'active' : '' }}">
-              <i class="nav-icon fa fa-table"></i>
+              <i class="fa fa-envelope-square"></i>
               <p>
                 Contacts
               </p>
@@ -179,7 +179,7 @@
             <a href="{{ url('soldes') }}" class="nav-link {{ Request::is('soldes') ? 'active' : '' }} ">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
-                Solde des employés 
+                Solde des employés
               </p>
             </a>
           </li>
@@ -191,10 +191,10 @@
               </p>
             </a>
           </li>
-          
+
           <li class="nav-item ">
             <a href="{{ url('contacts')}}" class="nav-link {{ Request::is('contacts') ? 'active' : '' }}">
-              <i class="nav-icon fa fa-table"></i>
+              <i class="fa fa-envelope-square"></i>
               <p>
                 Contacts
               </p>

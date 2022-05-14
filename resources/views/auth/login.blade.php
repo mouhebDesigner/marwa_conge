@@ -10,7 +10,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="header-login">
-							<h2>Sign in</h2>
+							<h2>Gestion de congé</h2>
 						</div>
 					</div>
 				</div>
@@ -35,15 +35,22 @@
                                         </span>
                                     @enderror
                                 </div>
-								<button type="submit" class="btn btn-primary signin">Sign in</button>
+                                     <div class="w-50 m-auto pt-1 pb-3">
+                                         {!! NoCaptcha::renderJs() !!}
+                                         {!! NoCaptcha::display() !!}
+                                         @error('g-recaptcha-response')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                         @enderror
+                                     </div>
+								<button type="submit" class="btn btn-primary signin">Se connecter</button>
 							</form>
 						</div>
 					</div>
 				</div>
 				<div class="row pb-5">
 					<div class="col-md-12 text-center">
-						<p class="no-account">Don't have an account?</p>
-						<a href="signup.html" class="signup">Sign up now</a>
+						<p class="no-account">Vous n'avez pas un compte?</p>
+						<a href="signup.html" class="signup">S'inscrire'</a>
 					</div>
 				</div>
 			</div>

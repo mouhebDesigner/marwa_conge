@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="wrapper">
-        <!-- Faire appel à la header et aside ici dans cet div -->
         @include('includes.header')
         @include('includes.aside')
         <div class="content-wrapper">
@@ -15,9 +14,9 @@
                         <h2>Droit de congé</h2>
                     </div>
                     <div class="chapiter">
-                        <h4 class="chapiter-title">Chapitre III – Congés</h4>
+                        <h4 class="chapiter-title">Droit de Congé</h4>
                         <p class="section">Section 1 - Dispositions générales</p>
-                        <p class="article">Article 35</p>
+                        <p class="article">Article 1</p>
                         <p class="content">
                             Les congés sont accordés par les chefs des administrations, des  collectivités publiques locales ou des établissements publics à caractère admi- nistratif.
                             Sauf cas d'indisponibilité subite, à charge de régularisation ultérieure, aucun fonctionnaire ne peut interrompre l'exercice de ses fonctions s'il n'a de- mandé et obtenu un congé.
@@ -33,7 +32,7 @@
 
                         </p>
                         <div class="article">
-                            Article 36
+                            Article 2
                         </div>
                         <p class="content">
                             Il est interdit au fonctionnaire bénéficiaire d'un congé de se livrer à toute
@@ -43,7 +42,7 @@
                         Section 2 - Congés administratifs
                         </p>
                         <p class="article">
-                        Article 37 (Modifié par la loi n° 97-83 du 20 décembre 1997)
+                        Article 3 (Modifié par la loi n° 97-83 du 20 décembre 1997)
                         </p>
                         <p class="content">
                             Tout fonctionnaire en activité a droit à :
@@ -55,7 +54,7 @@
                             Les fonctionnaires ayant des enfants à charge bénéficient de la priorité pour le choix et la fixation de la période de congé annuel de repos.
                         </p>
                         <p class="article">
-                        Article 38 (Modifié par la loi n° 97-83 du 20 décembre 1997)
+                        Article 4 (Modifié par la loi n° 97-83 du 20 décembre 1997)
                         </p>
                         <p class="content">
                         L’administration peut décider, pour des raisons que l’intérêt du service peut rendre nécessaires, le report du congé de repos annuel attribué aux fonctionnaires, et ce, pour une seule année suivant celle au titre de laquelle le congé est dû.
@@ -64,7 +63,7 @@
                             II - CONGES EXCEPTIONNELS
                         </p>
                         <p class="article">
-                            Article 40
+                            Article 5
                         </p>
                         <p class="content">
                             Des congés exceptionnels peuvent être accordés à plein traitement et sans entrer en ligne de compte dans le calcul des congés de repos :
@@ -79,13 +78,13 @@
                             La durée des congés prévus aux paragraphes 5, 6 et 7 du présent article est égale au total des journées indiquées dans les convocations, augmentées, le cas échéant, des délais de routes nécessaires.
                         </p>
                         <p class="section">
-                            Section 3 - Congés pour raison de santé 
+                            Section 3 - Congés pour raison de santé
                         </p>
                         <p class="article">
                             I - Congés de maladie ordinaire
                         </p>
                         <p class="article">
-                            Article 41
+                            Article 6
                         </p>
                         <p class="content">
                             En cas de maladie dûment constatée et le mettant dans l'impossibilité d'exercer ses fonctions, le fonctionnaire peut obtenir un congé de maladie ordinaire.
@@ -95,13 +94,13 @@
                             Sauf cas d'urgence dûment établi, le fonctionnaire, bénéficiant d'un congé de maladie, ne peut quitter sa résidence habituelle que sur autorisation de son administration.
                         </p>
                         <p class="article">
-                        Article 42 (Modifié par la loi n°97-83 du 20 décembre 1997)
+                        Article 7 (Modifié par la loi n°97-83 du 20 décembre 1997)
                         </p>
                         <p class="content">
                             Durant les premiers mois de son recrutement et tant qu’il n’a pas accompli une période minimum de 365 jours, le fonctionnaire a droit à un congé de maladie ordinaire à plein traitement, à raison de cinq (5) jours pour chaque mois de services effectifs.
                             Le fonctionnaire qui a accompli ses fonctions pendant une période minimum de 365 jours a droit à un congé de maladie ordinaire dont la durée maximum est fixée à douze (12) mois dont deux (2) à plein traitement et dix
                             (10) à demi-traitement.
-                            
+
                             Pendant la durée du congé de maladie à demi-traitement, le fonctionnaire conserve la totalité des indemnités à caractère familial.
                             Sont inclus dans la période minimum de 365 jours, les périodes de services effectifs, les congés de repos, les jours fériés, les congés pour formation continue, les congés de maternité et les congés exceptionnels.
                             Le fonctionnaire qui a épuisé ses droits à congé de maladie ordinaire à plein traitement ou à demi-traitement ne peut obtenir à nouveau un congé de maladie ordinaire, que lorsqu’il aura accompli ses fonctions durant une nouvelle période minimum commence à courir le jour de la reprise de service à l’issue du premier congé de maladie ordinaire obtenu au titre de la précédante période de travail de 365 jours.
@@ -109,7 +108,7 @@
                             Lorsque le fonctionnaire qui a épuisé ses droits à congé de maladie ordinaire est reconnu définitivement inapte, il est admis à la retraite.
                         </p>
                         <p class="article">
-                            Article 43
+                            Article 8
                         </p>
                         <p class="content">
                             Les congés de maladie ordinaire, ne dépassant pas au total 30 jours par période de 365 jours, sont accordés directement par le chef de l'administration, de la collectivité publique locale ou de l'établissement public à caractère administratif.
@@ -119,7 +118,7 @@
                         II - CONGES DE MALADIE DE LONGUE DUREE
                         </p>
                         <p class="article">
-                            Article 44
+                            Article 9
                         </p>
                         <p class="content">
                             Les congés de maladie de longue durée peuvent être accordés aux fonctionnaires de l'Etat, des collectivités publiques locales et des éta- blissements publics à caractère administratif, en exercice ou en congé de maladie ordinaire, atteints d'une des maladies dont la liste est fixée par décret après avis du conseil supérieur de la fonction publique et de la réforme administrative.
@@ -127,7 +126,7 @@
                             Ces congés sont attribués par le chef de l'administration du fonctionnaire soit à la demande de l'intéressé, soit à l'initiative de l'administration, et ce, après avis conforme d'une commission médicale dont la composition et le fonctionnement sont fixés par décret.
                         </p>
                         <p class="article">
-                            Article 45
+                            Article 10
                         </p>
                         <p class="content">
                             Le congé de maladie de longue durée est accordé pour une période de cinq
@@ -137,14 +136,14 @@
                         III - DISPOSITIONS COMMUNES AUX CONGES DE MALADIE
                         </p>
                         <p class="article">
-                            Article 46
+                            Article 11
                         </p>
                         <p class="content">
                             Lorsque la maladie ordinaire ou de longue durée est contractée ou aggravée soit en service soit en accomplissant un  acte de  dévouement dans l'intérêt général, soit à la suite d'un accident survenu à l'occasion de l'exercice des fonctions, le fonctionnaire conserve l'intégralité de ses émoluments jusqu'à ce qu'il soit en état de reprendre son service. Dans tous ces cas, il a droit au remboursement des honoraires médicaux et des frais entraînés directement par la maladie ou l'accident.
                             Lorsque le fonctionnaire visé au paragraphe précédent est reconnu définitivement inapte il est admis à faire valoir ses droits à la retraite. Dans ce cas, il a droit à une rente viagère d'invalidité pour incapacité permanente cumulable avec la pension de retraite.
                         </p>
                         <p class="article">
-                            Article 47
+                            Article 12
                         </p>
                         <p class="content">
                             Les congés de maladie à passer hors du territoire de la République doivent faire l'objet, sauf cas d'urgence, d'une autorisation préalable du chef de l'administration intéressée.
@@ -153,15 +152,15 @@
                             IV - CONGE DE MATERNITE ET CONGE POST-NATAL
                         </p>
                         <p class="article">
-                            Article 48
+                            Article 13
                         </p>
                         <p class="content">
                             Le fonctionnaire de sexe féminin bénéficie, sur production d'un certificat médical, d'un congé de maternité de deux mois à plein traitement cumulable avec le congé de repos.
                             A l'issue du congé de maternité, un congé post-natal destiné à lui permettre d'élever ses enfants et ne dépassant pas quatre mois, à demi- traitement peut lui être accordé, sur sa demande.
-                            Ces congés sont accordés directement par le Chef de l'Administration. 
+                            Ces congés sont accordés directement par le Chef de l'Administration.
                         </p>
                         <p class="article">
-                        Article 48 (bis) (Ajouté par la loi n° 97-83 du 20 décembre 1997) 
+                        Article 14 (bis) (Ajouté par la loi n° 97-83 du 20 décembre 1997)
                         </p>
                         <p class="content">
                             Le repos d’allaitement :
@@ -173,7 +172,7 @@
                         Section 4 - Congé pour formation continue
                         </p>
                         <p class="article">
-                        Article 49
+                        Article 15
                         </p>
                         <p class="content">
                             Le fonctionnaire peut demander un congé pour participer à un cycle de formation continue organisé par l'administration.
@@ -183,25 +182,25 @@
                         Section 5 - Congé sans solde
                         </p>
                         <p class="article">
-                            Article 50
+                            Article 16
                         </p>
                         <p class="content">
                         Des congés sans solde peuvent être accordés aux fonctionnaires. La durée du congé sans solde, qui ne peut excéder trois mois par année, n'est pas considérée comme service effectif.
                         </p>
-                        <p class="section">                            
+                        <p class="section">
                             Section 6 (1)
                             Congé pour la création d’une entreprise
                         </p>
                         <p class="article">
-                        Article 50 (bis) (Paragraphe premier et 3 modifiés par l’article 34 de la loi n° 2007-69 du 27 décembre 2007)
-                        </p>    
+                        Article 17 (bis) (Paragraphe premier et 3 modifiés par l’article 34 de la loi n° 2007-69 du 27 décembre 2007)
+                        </p>
                         <p class="content">
                             Un congé pour la création d’une entreprise peut être accordé au fonctionnaire titulaire pour une durée maximale d’une année renouvelable une seule fois. Ce congé est renouvelable deux fois dans le cas où l’entreprise est créée dans les zones de développement régional. Il peut être accordé dans le cadre de la transmission prévue par la loi n° 95-34 relative au redressement des entreprises en difficultés économiques telle que modifiée et complétée par les textes subséquents. Ce congé est  accordé par décret.
                             Durant la période du congé pour la création d’une entreprise, le fonctionnaire continue de bénéficier de la couverture sociale.  Sur  cette base l’intéressé doit procéder au paiement de sa cotisation au titre du régime de retraite, de prévoyance sociale et du capital décès alors que l’administration se charge de payer les contributions mises à la charge de l’employeur. Dans ce cas, l’intéressé perd son droit au bénéfice du traitement, de l’avancement et de la promotion.
                             Dans le cas où l’entreprise est créée dans les zones de développement régional et nonobstant les dispositions législatives contraires, le fonctionnaire continue de bénéficier de la couverture sociale pendant les trois années et du demi-traitement pendant les deux premières années, sans pour autant avoir  le droit à l’avancement et à la promotion.
                         </p>
                         <p class="article">
-                        Article 50 (ter)
+                        Article 18 (ter)
                         </p>
                         <p class="content">
                             Il est interdit au fonctionnaire bénéficiaire d’un congé pour la création d’une entreprise d’exercer une activité contraire au motif au titre duquel le congé a été accordé.
@@ -209,7 +208,7 @@
                             S’il est établi que l’intéressé a contrevenu aux conditions d’octroi de ce congé, il est immédiatement mis fin au congé et, le cas échéant, l’intéressé doit rembourser les sommes dont il a bénéficié, sans préjudice des poursuites disciplinaires.
                         </p>
                         <p class="article">
-                        Article 50 (quater) (Paragraphe premier modifié par l’article 34 de la loi n° 2007 69 du 27 décembre 2007)
+                        Article 19 (quater) (Paragraphe premier modifié par l’article 34 de la loi n° 2007 69 du 27 décembre 2007)
                         </p>
                         <p class="content">
                             Le fonctionnaire bénéficiaire d’un congé pour la création d’une entreprise doit demander par lettre recommandée sa réintégration ou le renouvellement de ce congé pour une deuxième année ou pour une troisième année dans le cas où l’entreprise est créée dans les zones de développement régional et ce dans un délai d’un mois au moins avant l’expiration de la période du congé.
@@ -217,20 +216,19 @@
                             Au cas où le fonctionnaire ne demande pas sa réintégration dans le délai ci- dessus indiqué, et après avoir été mis en demeure, il est considéré comme ayant rompu tout lien avec le service public.
                         </p>
                         <p class="article">
-                        Article 50 quinto
+                        Article 20 quinto
                         </p>
                         <p class="content">
                         Les procédures et les modalités d’application des dispositions prévues par les articles 35 (5ème sous paragraphe nouveau), 50 (bis), 50 (ter) et 50 (quater) de la présente loi sont fixées par décret.
                         </p>
-                            
 
 
 
-                        
+
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Njarbou nconnectou tawa lazem y3adina lahna be design jdid  -->
-    </div>         
+    </div>
 @endsection

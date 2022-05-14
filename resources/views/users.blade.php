@@ -3,12 +3,8 @@
 <!-- How we will do that, we will create new views and we will name it like layouts.balde.php -->
 <!-- we will import here the layouts file  -->
 @extends('layouts')
-
-<!-- We will access here to the reservation place of the content of the page using section method  -->
 @section('content')
-    <!-- This is the content now clear ?? yes good  -->
-    <!-- Let's make now the table of users -->
-    <!-- All what I will write here as classes is already made by bootstrap okay ok -->
+
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -19,19 +15,19 @@
                         <th scope="col">Email</th>
                         <th scope="col">Num tel</th>
                         <th scope="col">adresse</th>
-                        <th scope="col">date de recrutement</th>        
+                        <th scope="col">date de recrutement</th>
                     </tr>
                 </thead>
                 <tbody>
-                
+
                     <!-- We will display now here the result of the function index using the variable users  -->
                     <!-- We must to go through an array and display its values  -->
                     <!-- I mean , on doit parcourir le tableau retourner de la fonction index okiii ok -->
                     @foreach($users as $user)
                     <!-- The variable $user get the result of $users row by row and display them  -->
-                    <!-- For example if the variable $users has 3 rows, the $user willget the first and display it 
+                    <!-- For example if the variable $users has 3 rows, the $user willget the first and display it
                     then the second and display it, the same wit th last row clear ?? yes good  -->
-                        
+
                         <tr>
                         <!-- each row has attributs like name, email adresse etc .... okii ok good  -->
                             <td>{{ $user->name }}</td>

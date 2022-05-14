@@ -13,24 +13,24 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
-      
+
       <!-- Notifications Dropdown Menu -->
-      
+
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
           <img src="{{ asset('assets/img/photo.jpg')}}" style="border-radius: 50%; width: 30px; height: 30px;" alt="">
-          <span class="badge badge-warning navbar-badge">15</span>
+          <span class="badge badge-warning navbar-badge">gérer compte</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <span class="dropdown-item dropdown-header"> Notifications</span>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fa fa-envelope mr-2"></i> Paramètre
+            <i class="fa fa-cog"></i> Paramètre
           </a>
           <div class="dropdown-divider"></div>
           <!-- Femma route makhdmoum esma logout route('logout') 7atineh fe lien lahna bech y'accidila w ydeconnecti   -->
           <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-            <i class="fa fa-users mr-2"></i> Déconnecter
+            <i class="fa fa-window-close"></i> Déconnecter
           </a>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf

@@ -1,4 +1,4 @@
-<!-- On va copier ici la formulaite de creation 
+<!-- On va copier ici la formulaite de creation
 ensuite on va faire le traitement  -->
 @extends('layouts.master')
 
@@ -9,9 +9,9 @@ ensuite on va faire le traitement  -->
         @include('includes.aside')
         <div class="content-wrapper">
             <!-- On doit insérer un formualaire ici à travers le template  -->
-            <!-- C'est la formulaire mais on a besoin d'ajouter avant les classes 
+            <!-- C'est la formulaire mais on a besoin d'ajouter avant les classes
             contentcontainer row col-md-6  voir comment-->
-            <!-- Maitenant on va voir quels sont les champs d'employé afin de faire 
+            <!-- Maitenant on va voir quels sont les champs d'employé afin de faire
             un input à chaque champ okii ok -->
             <div class="content">
                 <div class="container">
@@ -20,15 +20,15 @@ ensuite on va faire le traitement  -->
                             <!-- Ici la formulaire maintenant  -->
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Quick Example</h3>
+                                    <h3 class="card-title">modifier employé</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
                                 <form action="{{ url('employes/'.$employe->cin) }}" method="post">
                                     @csrf
                                     @method('put')
-                                    <!-- Method put crée un clé pour la modification 
-                                    put is a method of send request like post and get but this is a method for the modification 
+                                    <!-- Method put crée un clé pour la modification
+                                    put is a method of send request like post and get but this is a method for the modification
                                     is taht clear ? yes good s3aat jomal ma talgahomch fel français hhh hani nifhmik hh hkhw emala jawna bahii -->
                                     <div class="card-body">
                                     <!-- employe this is the variable that we sent from the controller do you notice ? ui good -->
@@ -41,7 +41,7 @@ ensuite on va faire le traitement  -->
                                                     </div>
                                                     <div class="col-md-8">
                                                         <input type="text" class="form-control" value="{{ $employe->cin }}"  placeholder="Saisir le cin" name="cin">
-                                                        
+
                                                         @error('cin')
                                                             <p class="text-danger">{{ $message }}</p>
                                                         @enderror
@@ -60,14 +60,14 @@ ensuite on va faire le traitement  -->
                                                     <!-- now we know that this var employe has a lsit of information of an employe okay ok
                                                     good We have just to put each value in its input field -->
                                                         <input type="text" class="form-control" value="{{ DB::table('users')->where('id', $employe->user_id)->first()->name }}"  placeholder="Saisir le nom d'employé" name="name">
-                                                        <!-- Lazem kol message d'erreur mta3 input yji te7t l'input mta3a hekka walla ? ey bien 
+                                                        <!-- Lazem kol message d'erreur mta3 input yji te7t l'input mta3a hekka walla ? ey bien
                                                         voir comment  -->
                                                         @error('name')
                                                             <p class="text-danger">{{ $message }}</p>
                                                         @enderror
                                                         <!-- $message trouve la resultat de la fonction error okii ok  -->
-                                                        <!-- error fonction prés définit takhedh comme parametre ems l'input w traje3 variale fih 
-                                                        message d'erruer okii ok bien 
+                                                        <!-- error fonction prés définit takhedh comme parametre ems l'input w traje3 variale fih
+                                                        message d'erruer okii ok bien
                                                         nchoufou template mta3na nalgouch feha message d'erreur rtah  -->
                                                     </div>
                                                 </div>
@@ -167,28 +167,28 @@ ensuite on va faire le traitement  -->
                                                         <label for="">Grade d'employé</label>
                                                     </div>
                                                     <div class="col-md-8">
-                                                    <!-- Here now we have to make a condition to select the right option 
+                                                    <!-- Here now we have to make a condition to select the right option
                                                     because we have a lot did you understand ? nn
-                                                    okii kan la7adhtich lahna fema dexu option fe select nn?? 
+                                                    okii kan la7adhtich lahna fema dexu option fe select nn??
                                                     agent admini
-                                                    employe shihs walla ? ey bien feme attribut fe select html esmha selected  
+                                                    employe shihs walla ? ey bien feme attribut fe select html esmha selected
                                                     reti win ktabtha ? ui chno9sdou beha za3ma ? condition valable pour agent admin akaho
                                                     la la awwel haja hadhi html ma 3endha hatta 3ala9a bel laravel mela?
-                                                    okii nfahmek liste de roulante select feha plusieur options 
+                                                    okii nfahmek liste de roulante select feha plusieur options
                                                     eli selectionné par défaut houwa awel valeur mawjdou zay fel exmp eli 3ena a
                                                     agent administraitf houwa eli selectionné par défaut oki okaleth wawlla 10 bech ykoun
-                                                    selectionné par defaut chna3mel, nji fe akher tag option w nekteb selected hataw ywali 
+                                                    selectionné par defaut chna3mel, nji fe akher tag option w nekteb selected hataw ywali
                                                     wa9teli n7eb ana yabda valeur eth
-                                                    fhamtini ? ui bien tawa esh besh na3mlou 7na lazem option eli tkoun selectionné par défaut 
+                                                    fhamtini ? ui bien tawa esh besh na3mlou 7na lazem option eli tkoun selectionné par défaut
                                                     hiya eli besh tkoun égau 3al lvaleur lmawjoud fe champ grade mta3 l'employe claire ?? ui
                                                     bien voir comment -->
                                                         <select name="grade">
                                                             <option value="agent administratif" @if($employe->grade == "agent administratif") selected @endif>Agent administraytif</option>
                                                             <option value="employé" @if($employe->grade == "employé") selected @endif>Employé</option>
                                                         </select>
-                                                        <!-- cv wadh7a ? 
-                                                        nn, bahi tab3ini 3emlt condition if 3adiya w golt fel condition kan $employe->grade mesh 3ena 
-                                                        champ grade 7na ?? ey bahii ki yabda valeur mta3a égale lel valeur mta3 l'option el houwa 
+                                                        <!-- cv wadh7a ?
+                                                        nn, bahi tab3ini 3emlt condition if 3adiya w golt fel condition kan $employe->grade mesh 3ena
+                                                        champ grade 7na ?? ey bahii ki yabda valeur mta3a égale lel valeur mta3 l'option el houwa
                                                         y'activi l'attribut selected w tawli l'option haki séléctionné par défaut wadh7a ?? -->
                                                         @error('grade')
                                                             <p class="text-danger">{{ $message }}</p>
@@ -268,7 +268,7 @@ ensuite on va faire le traitement  -->
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
     </div>
 @endsection

@@ -16,7 +16,7 @@
                   <h5><i class="icon fas fa-info"></i> Alert!</h5>
                   {{ session('edit-message') }}
                 </div>
-               
+
             @endif
             @if(session('delete-message'))
                 <div class="alert alert-danger alert-dismissible">
@@ -32,7 +32,7 @@
                   {{ session('retraite-message') }}
                 </div>
             @endif
-            
+
             <section class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
@@ -68,7 +68,7 @@
                                                     <input type="text" name="profession" class="form-control" placeholder="Saisir profession">
                                                 </div>
                                                 <div class="col-md-3">
-                                                    <input type="text" name="etat" class="form-control" placeholder="Saisir etat">    
+                                                    <input type="text" name="etat" class="form-control" placeholder="Saisir etat">
                                                 </div>
                                                 <div class="col-md-3">
                                                     <input type="submit" class="btn btn-default" value="Filtrer">
@@ -76,14 +76,14 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <!-- okii 3lech 7atina famika des filtres 
-                                    bech ki yabdou fema barsha employes w l'admin y7awem 3la 
-                                    categorie mou3ayna walla wa7ed ynajem yalgah bel filtraaghe yab9ach 
+                                    <!-- okii 3lech 7atina famika des filtres
+                                    bech ki yabdou fema barsha employes w l'admin y7awem 3la
+                                    categorie mou3ayna walla wa7ed ynajem yalgah bel filtraaghe yab9ach
                                     ydour 3lihom lkol n'est ce pas ? ey ey bien  -->
                                 </div>
                                 <div class="col-md-2">
                                 <div class="d-flex justify-content-end">
-                                
+
                                     <a href="{{ url('employes/create') }}">
                                     <!-- C'est l'url qui nous rédirgie à la fonction create de controller Eploye poru afficher le formualire okii
                                      bien nkamlou-->
@@ -122,8 +122,8 @@
                         <!-- Tawa 3ena lahna name weli houwa mesh mawjoud fel table employe shih walla ? ey
                         bien kifeh enajmou njibouh emala tab3ini  -->
                         <!-- Brabi njarbou haja la7dha  -->
-                        <!-- Wa9teli user_id mta3 table employe yabda egaux m3a id fe table user 
-                        nwalou njibou champ name w kif kif pour l'email okii ok  
+                        <!-- Wa9teli user_id mta3 table employe yabda egaux m3a id fe table user
+                        nwalou njibou champ name w kif kif pour l'email okii ok
                         fiirst() pour retourner la résultat d'un seul ligne dans la table okii ok-->
                         <td>{{ DB::table('users')->where('id', $employe->user_id)->first()->name }}</td>
                         <td>{{ DB::table('users')->where('id', $employe->user_id)->first()->email }}</td>
@@ -134,10 +134,10 @@
                         <td>{{ $employe->profession }}</td>
                         <td>{{ $employe->type_contrat }}</td>
                         <td>
-                        <!--REti kifeh ? ey bien 
-                        tawa lazemhom yjou bjanb b3adhhom oki ok voir comment Mais gbal ma nhez lcontenue lazemna nbadlou les boutons be des icons 
-                        icons pour la modification w wa7da pour la supp okii ok bien 
-                        tawa lazem nbadloulhom chwey fel width wel color mta3hom css hahou 
+                        <!--REti kifeh ? ey bien
+                        tawa lazemhom yjou bjanb b3adhhom oki ok voir comment Mais gbal ma nhez lcontenue lazemna nbadlou les boutons be des icons
+                        icons pour la modification w wa7da pour la supp okii ok bien
+                        tawa lazem nbadloulhom chwey fel width wel color mta3hom css hahou
                         hhhhhhh hhhhhh haya tab3ini-->
                         <div class="row">
                             <div class="col-md-4">
@@ -152,9 +152,9 @@
                                 <form action="{{ url('employes/'.$employe->cin)  }}" method="post">
                                     @csrf <!-- clé kil 3ada  -->
                                     @method('delete')
-                                    <!-- Sorry background lel bouton mesh mta3 l'icon ghletet 
+                                    <!-- Sorry background lel bouton mesh mta3 l'icon ghletet
                                      {{ url('employes/'.$employe->id)  }} c'est le path de la fonction delete calire ..?? ui
-                                     bien aller au controller alors 
+                                     bien aller au controller alors
                                     taaw mazel fema bordure on doit l'eviter okii ok claire ui
                                     bien brabi la7dha nsakhen l7lib el khouya sghir mazal ki fa9 okii ok
                                     -->
@@ -164,9 +164,7 @@
                                     </button>
                                 </form>
                             </div>
-                            <!-- entii khaybaaa far7anaa hhhhhh 3arfa ro7ek ya3ni 
-                            mahboulaaa entii amam 3saaaaal zadaaa la 3assolaa 
-                            kkifeeh ? hhhhh bahiiii  -->
+                            <!---->
                             <div class="col-md-4">
                                 <form action="{{ url('employe/'.$employe->cin.'/retraite') }}" method="post">
                                     @csrf
@@ -175,18 +173,17 @@
                                         Retraite
                                     </button>
                                 </form>
-                                
+
                             </div>
                         </div>
 
-                        </td>        
+                        </td>
                 </tr>
-                    @endforeach 
+                    @endforeach
                 <tfoot>
                     <th></th>
                 </tfoot>
-                <!-- Abrak tawa 
-                    tawa nemshou n7awlou n7elou lpage hadhii à travers le controller okii ok
+                <!--
                  -->
                     <th class="text-center">CIN</th>
                     <th class="text-center">name</th>
@@ -197,7 +194,7 @@
                     <th class="text-center">type contrat</th>
                     <th>action</th>
                 </tbody>
-                
+
               </table>
               </div>
               </div>
@@ -206,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-            </div>   
-        </div>    
+            </div>
+        </div>
     </div>
 @endsection

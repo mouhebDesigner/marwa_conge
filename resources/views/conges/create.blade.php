@@ -7,9 +7,9 @@
         @include('includes.aside')
         <div class="content-wrapper">
             <!-- On doit insérer un formualaire ici à travers le template  -->
-            <!-- C'est la formulaire mais on a besoin d'ajouter avant les classes 
+            <!-- C'est la formulaire mais on a besoin d'ajouter avant les classes
             contentcontainer row col-md-6  voir comment-->
-            <!-- Maitenant on va voir quels sont les champs d'employé afin de faire 
+            <!-- Maitenant on va voir quels sont les champs d'employé afin de faire
             un input à chaque champ okii ok -->
             <div class="content">
                 <div class="container">
@@ -19,7 +19,7 @@
                             <!-- Ici la formulaire maintenant  -->
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Quick Example</h3>
+                                    <h3 class="card-title">Ajouter congé</h3>
                                 </div>
                                 <form action="{{ url('conges') }}" method="post">
                                     @csrf
@@ -32,13 +32,13 @@
                                                         <label for="exampleInputEmail1">Date debut</label>
                                                     </div>
                                                     <div class="col-md-8">
-                                                    
+
                                                         <input type="date" class="form-control" value="{{ old('date_debut') }}"    name="date_debut">
-                                                       
+
                                                         @error('date_debut')
                                                             <p class="text-danger">{{ $message }}</p>
                                                         @enderror
-                                                        
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -49,11 +49,11 @@
                                             <div class="form-group ">
                                                 <div class="row">
                                                     <div class="col-md-4">
-                                                        <label for="exampleInputEmail1">Date retour</label>
+                                                        <label for="exampleInputEmail1">Date de reprise</label>
                                                     </div>
                                                     <div class="col-md-8">
-                                                    
-                                                        <input type="date" class="form-control" value="{{ old('date_retour') }}"  name="date_retour">             
+
+                                                        <input type="date" class="form-control" value="{{ old('date_retour') }}"  name="date_retour">
                                                         @error('date_retour')
                                                             <p class="text-danger">{{ $message }}</p>
                                                         @enderror
@@ -82,7 +82,7 @@
                                     <!-- trah njarbou tawa  -->
                                     <!-- Eli 3melnahom tawa homa les champs commune tawa lazem nzidou les champs mta3 table employé okii ok -->
 
-                                    
+
                                     </div>
                                     <!-- /.card-body -->
                                     <!-- trah njarbou code mta3na taw nchoufouhom yetsajlou walla  -->
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
     </div>
 @endsection

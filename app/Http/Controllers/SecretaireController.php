@@ -16,7 +16,7 @@ class SecretaireController extends Controller
     /*
      path: /secretaires
      method: get
-     Route::get('/secretaires', 'SecretaireController@index); 
+     Route::get('/secretaires', 'SecretaireController@index);
     */
     public function index()
     {
@@ -33,7 +33,7 @@ class SecretaireController extends Controller
     /*
      path: /secretaires/create
      method: get
-     Route::get('/secretaires/create', 'SecretaireController@create); 
+     Route::get('/secretaires/create', 'SecretaireController@create);
     */
     public function create()
     {
@@ -49,7 +49,7 @@ class SecretaireController extends Controller
     /*
      path: /secretaires
      method: post
-     Route::post('/secretaires', 'SecretaireController@store); 
+     Route::post('/secretaires', 'SecretaireController@store);
     */
     public function store(Request $request)
     {
@@ -66,7 +66,7 @@ class SecretaireController extends Controller
         $secretaire->save();
 
         return redirect('secretaires')->with('add-message', 'La secrétaire a été ajouté avec succé');
-    
+
     }
 
     /**
@@ -76,9 +76,9 @@ class SecretaireController extends Controller
      * @return \Illuminate\Http\Response
      */
     /*
-     path: /secretaires/$id 
+     path: /secretaires/$id
      method: get
-     Route::get('/secretaires/{id}', 'SecretaireController@show); 
+     Route::get('/secretaires/{id}', 'SecretaireController@show);
     */
     public function show($id)
     {
@@ -94,7 +94,7 @@ class SecretaireController extends Controller
     /*
      path: /secretaires/$id/edit
      method: get
-     Route::get('/secretaires/{id}/edit', 'SecretaireController@edit); 
+     Route::get('/secretaires/{id}/edit', 'SecretaireController@edit);
     */
     public function edit($id)
     {
@@ -113,7 +113,7 @@ class SecretaireController extends Controller
     /*
      path: /secretaires/$id
      method: put
-     Route::put('/secretaires/{id}', 'SecretaireController@update); 
+     Route::put('/secretaires/{id}', 'SecretaireController@update);
     */
     public function update(Request $request, $id)
     {
@@ -140,7 +140,7 @@ class SecretaireController extends Controller
     /*
      path: /secretaires/$id
      method: delete
-     Route::delete('/secretaires/{id}', 'SecretaireController@destroy); 
+     Route::delete('/secretaires/{id}', 'SecretaireController@destroy);
     */
     public function destroy($id)
     {

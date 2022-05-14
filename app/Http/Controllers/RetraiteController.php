@@ -11,17 +11,10 @@ class RetraiteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // path: retraites , method:get => Route::get('retraites', 'RetraitesController@index'); 
+    // path: retraites , method:get => Route::get('retraites', 'RetraitesController@index');
     public function index()
-    {
-        // Elle va nous retourner la liste des employés retraités;
-        // on doit créer un variable qui trouve un instance de la class User model qui représente la table users dans la base de donnné;
-        $retraites  = Employe::where('etat', 'retraite')->get();
-
-        return view('retraites.index', compact('retraites'));
-
-    }
-
+    {  $retraites  = Employe::where('etat', 'retraite')->get();
+        return view('retraites.index', compact('retraites'));}
     /**
      * Show the form for creating a new resource.
      *

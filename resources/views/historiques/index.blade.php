@@ -1,22 +1,18 @@
-<!-- kil 3ada enadou master mta3na  -->
 @extends('layouts.master')
-
 <!-- Appel de la partie de reservation -->
 @section('content')
     <div class="wrapper">
         @include('includes.header')
         @include('includes.aside')
-        <!-- Fel page hadhii nest7a9ou ykoun 3ena table lel affichage n'est ce pas ui
-        bien emala njiboha men tempalte mta3na choufi kifeh tab3inin -->
         <div class="content-wrapper">
-        <!-- Pour afficher la message eon doit utiliser la fonction @session() dans blade 7adhra fel laravel choufi kifeh  -->
+        <!-- Pour afficher la message on utilise la fonction @session()  -->
             @if(session('edit-message'))
             <div class="alert alert-info alert-dismissible">
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                   <h5><i class="icon fas fa-info"></i> Alert!</h5>
                   {{ session('edit-message') }}
                 </div>
-               
+
             @endif
             @if(session('delete-message'))
                 <div class="alert alert-danger alert-dismissible">
@@ -49,16 +45,11 @@
                             <div class="card-header">
                                 <div class="row">
                                     <div class="col-md-10">
-                                        <!-- On va faire des inputs pour les filtrages icii -->
-                                        
-                                        <!-- okii 3lech 7atina famika des filtres 
-                                        bech ki yabdou fema barsha employes w l'admin y7awem 3la 
-                                        categorie mou3ayna walla wa7ed ynajem yalgah bel filtraaghe yab9ach 
-                                        ydour 3lihom lkol n'est ce pas ? ey ey bien  -->
+                                        <!-- faire des inputs pour les filtrages  -->
                                     </div>
                                 </div>
                             </div>
-                        
+
                             <div class="card-body">
                                 <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4">
                                     <div class="row">
@@ -82,7 +73,6 @@
                                             <table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
                                                 <thead>
                                                 <tr role="row">
-                                                    <!-- Tawa nchouf chnouwa 3ena fe table users comme étant de champs w nektbouhom lahna okii ok -->
                                                     <th class="text-center">ID</th>
                                                     <th class="text-center">Date debut</th>
                                                     <th class="text-center">date retour</th>
@@ -90,7 +80,7 @@
                                                     <th class="text-center">acceptation</th>
                                                     <th>action</th>
                                                 </tr>
-                                                    <!-- Nemshou tawa nasn3ou controller lel employe oki ok -->
+                                                    <!-- creer controller pour employe  -->
                                                 </thead>
                                                 <tbody>
                                                 @foreach($conges as $conge)
@@ -107,11 +97,11 @@
                                                                 Le congé est en attente
                                                         @endif
                                                         @if($conge->acceptation == "non")
-                                                        
+
                                                         Le congé n'est pas accepté
                                                         @endif
                                                         @if($conge->acceptation == "oui")
-                                                                le congé est accepté 
+                                                                le congé est accepté
                                                         @endif
                                                         </td>
                                                         <td>
@@ -121,7 +111,7 @@
                                                                 <a href="{{ url('conges/accepter/'.$conge->id) }}">
                                                                     <button class="btn btn-success" @if($conge->acceptation == "oui") disabled @endif>
                                                                         Accepter
-                                                                    </button>  
+                                                                    </button>
                                                                 </a>
                                                             </div>
                                                             <div class="col-md-3">
@@ -139,10 +129,9 @@
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <form action="{{ url('conges/'.$conge->id)  }}" method="post">
-                                                                    @csrf 
+                                                                    @csrf
                                                                     @method('delete')
                                                                     <button type="submit" style=" background: none; border: none">
-                                                                    <!-- Bouton supp tawa 3endha background lazemna ena7ouh okiiok -->
                                                                         <i class="fas fa-trash-alt"  style="color: red; transform:scale(1.5);"></i>
                                                                     </button>
                                                                 </form>
@@ -150,14 +139,12 @@
                                                             @endif
                                                         </div>
 
-                                                        </td>        
+                                                        </td>
                                                 </tr>
-                                                    @endforeach 
+                                                    @endforeach
                                                 <tfoot>
                                                     <th></th>
                                                 </tfoot>
-                                                <!-- Abrak tawa 
-                                                    tawa nemshou n7awlou n7elou lpage hadhii à travers le controller okii ok
                                                 -->
                                                     <th class="text-center">ID</th>
                                                     <th class="text-center">Date debut</th>
@@ -166,7 +153,7 @@
                                                     <th class="text-center">acceptation</th>
                                                     <th>action</th>
                                                 </tbody>
-                                                
+
                                             </table>
                                         </div>
                                     </div>
@@ -175,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-            </div>   
-        </div>    
+            </div>
+        </div>
     </div>
 @endsection

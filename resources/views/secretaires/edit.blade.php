@@ -7,9 +7,9 @@
         @include('includes.aside')
         <div class="content-wrapper">
             <!-- On doit insérer un formualaire ici à travers le template  -->
-            <!-- C'est la formulaire mais on a besoin d'ajouter avant les classes 
+            <!-- C'est la formulaire mais on a besoin d'ajouter avant les classes
             contentcontainer row col-md-6  voir comment-->
-            <!-- Maitenant on va voir quels sont les champs d'employé afin de faire 
+            <!-- Maitenant on va voir quels sont les champs d'employé afin de faire
             un input à chaque champ okii ok -->
             <div class="content">
                 <div class="container">
@@ -19,7 +19,7 @@
                             <!-- Ici la formulaire maintenant  -->
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Quick Example</h3>
+                                    <h3 class="card-title">modifier</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
@@ -40,14 +40,14 @@
                                                     <!-- on va définit l'attribut value avec une fonction
                                                     nommé old(nom d'input) fonction hadhi tsajelek akher valeur kan fel input okii ok bien -->
                                                         <input type="text" class="form-control" value="{{ $secretaire->name }}" placeholder="Saisir le nom de secretaire" name="name">
-                                                        <!-- Lazem kol message d'erreur mta3 input yji te7t l'input mta3a hekka walla ? ey bien 
+                                                        <!-- Lazem kol message d'erreur mta3 input yji te7t l'input mta3a hekka walla ? ey bien
                                                         voir comment  -->
                                                         @error('name')
                                                             <p class="text-danger">{{ $message }}</p>
                                                         @enderror
                                                         <!-- $message trouve la resultat de la fonction error okii ok  -->
-                                                        <!-- error fonction prés définit takhedh comme parametre ems l'input w traje3 variale fih 
-                                                        message d'erruer okii ok bien 
+                                                        <!-- error fonction prés définit takhedh comme parametre ems l'input w traje3 variale fih
+                                                        message d'erruer okii ok bien
                                                         nchoufou template mta3na nalgouch feha message d'erreur rtah  -->
                                                     </div>
                                                 </div>
@@ -138,7 +138,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                     </div>
                                     <!-- /.card-body -->
                                     <!-- trah njarbou code mta3na taw nchoufouhom yetsajlou walla  -->
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
     </div>
 @endsection
