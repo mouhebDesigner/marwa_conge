@@ -13,11 +13,7 @@ class SecretaireController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    /*
-     path: /secretaires
-     method: get
-     Route::get('/secretaires', 'SecretaireController@index);
-    */
+
     public function index()
     {
         //
@@ -30,11 +26,6 @@ class SecretaireController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    /*
-     path: /secretaires/create
-     method: get
-     Route::get('/secretaires/create', 'SecretaireController@create);
-    */
     public function create()
     {
         return view('secretaires.create');

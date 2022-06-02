@@ -1,13 +1,10 @@
 @extends('layouts.master')
 
-<!-- Appel de la partie de reservation -->
 @section('content')
     <div class="wrapper">
         @include('includes.header')
         @include('includes.aside')
         <div class="content-wrapper" style="min-height: 732px;">
-    <!-- Content Header (Page header) -->
-    <!-- J'ai crée un nouveau conroller et j'ai le nommé contactController  -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">

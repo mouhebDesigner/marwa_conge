@@ -13,7 +13,6 @@ use Carbon\Carbon;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// créer un nouveau path
 Route::get('/edit', function(){
     return view('users.edit');
 
@@ -52,20 +51,8 @@ Route::get('conge/print', 'CongeController@print');
 Route::get('droits', function(){
     return view('droits');
 })->middleware('auth');
-/*
-    Comparer deux dates
-*/
-// Route::get('comparer', function(){
-//     echo Auth::user()->date_recrutement->format('M');
-// });
-// 'employes/'.$employe->id.'/edit' ce path est deja prêt dans le resource list
-// Aller au controller
-// employes/create ce path est déjà exist
-// bref nemshou lel cotnroller tawa
-// dant cette route on a un path qui nous rédirge à la fonction store dans la controller EmployeController
-// Cette foncction nous permet d'nvoyer de données à la base en utilisant la méthode post request
-// Le path de cette fonction est /employes
-// Fema haja ma 3melnahach fel aside lzaem nbadlou lmenu mta3na
+
+
 
 Route::get('/dates', function(){
 
@@ -78,18 +65,17 @@ Route::get('/dates', function(){
    echo "Aujourd'hui".$aujourdhui_m."<br>Rec:".$month_rec ;
 })
 ;
-Route::get('users', 'UsersController@index');// users is the path , UsersController is the controller and the index is the function of treatment in controller
+Route::get('users', 'UsersController@index');
 Route::get('/user/{id}/conge', function($id){
 
-    $conge  = App\User::find($id)->conge; //we will assign it with an instance of model User like this
-        echo $conge->motif;
+    $conge  = App\User::find($id)->conge; 
+    echo $conge->motif;
 });
 Route::get('/foreach', function(){
     $tab = array(12, 13, 15, 16);
     for($i = 0; $i< count($tab); $i++){
         echo $tab[$i]." | ";
     }
-    // Exemple de table associative
     $assoc = array(
         [
             "nom" => "Mouheb",

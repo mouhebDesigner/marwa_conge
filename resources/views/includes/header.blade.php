@@ -28,7 +28,6 @@
             <i class="fa fa-cog"></i> Paramètre
           </a>
           <div class="dropdown-divider"></div>
-          <!-- Femma route makhdmoum esma logout route('logout') 7atineh fe lien lahna bech y'accidila w ydeconnecti   -->
           <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
             <i class="fa fa-window-close"></i> Déconnecter
           </a>

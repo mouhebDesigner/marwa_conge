@@ -6,10 +6,7 @@
     <div class="wrapper">
         @include('includes.header')
         @include('includes.aside')
-        <!-- Fel page hadhii nest7a9ou ykoun 3ena table lel affichage n'est ce pas ui
-        bien emala njiboha men tempalte mta3na choufi kifeh tab3inin -->
         <div class="content-wrapper">
-        <!-- Pour afficher la message eon doit utiliser la fonction @session() dans blade 7adhra fel laravel choufi kifeh  -->
             @if(session('edit-message'))
             <div class="alert alert-info alert-dismissible">
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -55,7 +52,6 @@
                     <div class="col-sm-6">
                         <h1>Liste des congés</h1>
                     </div>
-                    <!-- tebloka  hataw nsaker w 3awdi connecti oku ok bien-->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Accueil</a></li>
@@ -63,7 +59,7 @@
                         </ol>
                     </div>
                     </div>
-                </div><!-- /.container-fluid -->
+                </div>
             </section>
             <div class="content">
                 <div class="row">
@@ -98,14 +94,12 @@
               <table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
                 <thead>
                 <tr role="row">
-                    <!-- Tawa nchouf chnouwa 3ena fe table users comme étant de champs w nektbouhom lahna okii ok -->
                     <th class="text-center">ID</th>
                     <th class="text-center">Date debut</th>
                     <th class="text-center">date retour</th>
                     <th class="text-center">cause</th>
                     <th class="text-center">acceptation</th>
                     <th>action</th>
-                    <!-- Nemshou tawa nasn3ou controller lel employe oki ok -->
                 </thead>
                 <tbody>
                 @foreach($conges as $conge)
@@ -157,7 +151,6 @@
                                     @csrf 
                                     @method('delete')
                                     <button type="submit" style=" background: none; border: none">
-                                    <!-- Bouton supp tawa 3endha background lazemna ena7ouh okiiok -->
                                         <i class="fas fa-trash-alt"  style="color: red; transform:scale(1.5);"></i>
                                     </button>
                                 </form>
@@ -171,9 +164,6 @@
                 <tfoot>
                     <th></th>
                 </tfoot>
-                <!-- Abrak tawa 
-                    tawa nemshou n7awlou n7elou lpage hadhii à travers le controller okii ok
-                 -->
                     <th class="text-center">ID</th>
                     <th class="text-center">Date debut</th>
                     <th class="text-center">date retour</th>

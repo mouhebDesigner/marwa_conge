@@ -11,7 +11,6 @@ class RetraiteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // path: retraites , method:get => Route::get('retraites', 'RetraitesController@index');
     public function index()
     {  $retraites  = Employe::where('etat', 'retraite')->get();
         return view('retraites.index', compact('retraites'));}

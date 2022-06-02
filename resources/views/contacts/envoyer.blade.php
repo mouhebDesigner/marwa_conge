@@ -5,7 +5,6 @@
 		@include('includes.header')
 		@include('includes.aside')
         <div class="content-wrapper" style="min-height: 732px;">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">

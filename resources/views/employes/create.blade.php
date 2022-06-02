@@ -6,17 +6,12 @@
         @include('includes.header')
         @include('includes.aside')
         <div class="content-wrapper">
-            <!-- On doit insérer un formualaire ici à travers le template  -->
-            <!-- C'est la formulaire mais on a besoin d'ajouter avant les classes 
-            contentcontainer row col-md-6  voir comment-->
-            <!-- Maitenant on va voir quels sont les champs d'employé afin de faire 
-            un input à chaque champ okii ok -->
+          
             <div class="content">
                 <div class="container">
                 @include('includes.stat')
                     <div class="row">
                         <div class="col-md-12">
-                            <!-- Ici la formulaire maintenant  -->
                             <div class="card card-primary">
                                 <div class="card-header">
                                     <h3 class="card-title">Quick Example</h3>
@@ -26,8 +21,6 @@
                                 <form action="{{ url('employes') }}" method="post">
                                     @csrf
                                     <div class="card-body">
-                                    <!-- Il faut minimiser la taille des inputs voir comment en utilisant bootstrap okii ok bien
-                                    hanhi c bon na3mlou nafs lméthode m3a lokhrin okii ok -->
                                     <div class="row">
                                         <div class="col-md-6 offset-md-3">
                                             <div class="form-group ">
@@ -245,13 +238,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- trah njarbou tawa  -->
-                                    <!-- Eli 3melnahom tawa homa les champs commune tawa lazem nzidou les champs mta3 table employé okii ok -->
 
                                     
                                     </div>
-                                    <!-- /.card-body -->
-                                    <!-- trah njarbou code mta3na taw nchoufouhom yetsajlou walla  -->
                                     <div class="card-footer">
                                     <div class="row">
                                         <div class="col-12">

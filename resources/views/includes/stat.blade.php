@@ -38,7 +38,6 @@
 		          </div>
 		          <div class="col-12 col-sm-6 col-md-3">
 		            <div class="info-box mb-3">
-					<!-- sorry for what I do hhh i said  -->
 		              <span class="info-box-icon bg-warning elevation-1"><i class="fa fa-id-badge"></i></span>
 		              <div class="info-box-content">
 		                <span class="info-box-text">Secretaires</span>

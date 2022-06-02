@@ -1,11 +1,9 @@
 @extends('layouts.master')
-<!-- Appel de la partie de reservation -->
 @section('content')
     <div class="wrapper">
         @include('includes.header')
         @include('includes.aside')
         <div class="content-wrapper">
-        <!-- Pour afficher la message on utilise la fonction @session()  -->
             @if(session('edit-message'))
             <div class="alert alert-info alert-dismissible">
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -27,7 +25,6 @@
                     <div class="col-sm-6">
                         <h1>Liste des historiques</h1>
                     </div>
-                    <!-- tebloka  hataw nsaker w 3awdi connecti oku ok bien-->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -45,7 +42,6 @@
                             <div class="card-header">
                                 <div class="row">
                                     <div class="col-md-10">
-                                        <!-- faire des inputs pour les filtrages  -->
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +76,6 @@
                                                     <th class="text-center">acceptation</th>
                                                     <th>action</th>
                                                 </tr>
-                                                    <!-- creer controller pour employe  -->
                                                 </thead>
                                                 <tbody>
                                                 @foreach($conges as $conge)

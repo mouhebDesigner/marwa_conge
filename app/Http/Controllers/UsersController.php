@@ -25,6 +25,8 @@ class UsersController extends Controller
     public function create()
     {
 
+    }
+
         /**
      * Store a newly created resource in storage.
      *
@@ -74,7 +76,7 @@ class UsersController extends Controller
          $user->adresse = $request->input('adresse');
          $user->date_recrutement = $request->input('date_recrutement');
          $user->grade = $request->input('grade');
-         $user->save(); /
+         $user->save(); 
         return redirect('/users')->with('edit-message', 'L\'utilisateur à été modifié avec succée !!');
     }
 

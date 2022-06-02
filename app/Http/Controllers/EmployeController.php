@@ -31,7 +31,6 @@ class EmployeController extends Controller
      */
     public function create()
     {
-        //Cette fonction permet d'afficher le formualaire
         return view('employes.create');
     }
 
@@ -83,8 +82,6 @@ class EmployeController extends Controller
     {
 
         $user = new User();
-        //  remplir les champs
-        // $request prend les valeurs de toutes les inputs dans la vue create
         $user->name = $request->input('name');
         $user->email = $request->input('email');
         $user->adresse = $request->input('adresse');
@@ -160,7 +157,6 @@ class EmployeController extends Controller
         $employe->solde = $request->input('solde');
         $employe->profession = $request->input('profession');
         $employe->save();
-        // rédirigier à la page index
         return redirect('/employes')->with('edit-message', 'L\'employé a été modifié avec succée');
 
     }

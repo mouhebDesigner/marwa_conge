@@ -11,7 +11,6 @@ class CongeTableSeeder extends Seeder
      */
     public function run()
     {
-        //Inérer des valuers dans la table conges de la base de donné
         DB::table('conges')->insert([
             [
                 "user_id" => 1,

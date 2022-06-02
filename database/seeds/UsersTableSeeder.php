@@ -11,8 +11,6 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        // We will use here the predefined class named DB
-        // we can access with this class to the tables in our DB without using the models okay ok
         DB::table('users')->insert(
             [
 
@@ -34,13 +32,8 @@ class UsersTableSeeder extends Seeder
                         "date_recrutement" => "2020-03-10",
                         "grade" => "secretaire",
                         ],
-                        // good let's try now to execute this class to insert these values into our table okay ok
-                        // Okay is that clear now ?? okay let's create a controller now to send the data to the view 
             ]
-            // Hana deja esta3melnaha 7na 😄 chofti kifeh mesh mlawnin 3endi les emojis ey hhh dholm hadha hhhhhhhh 😏 hhhhhhh
-            // Haya misalech rabi yehdih w hkhw hhhhh :p bien let's continue 
-            // Nemshou tawa n'executou seeder hadha bech n3abou table w lazem nesta3mlou lcommande hadhii 
-                        // php artisan seed:db okii ok
+           
     );
     }
 }

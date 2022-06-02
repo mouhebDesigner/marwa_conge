@@ -13,7 +13,6 @@ class CreateEmployesTable extends Migration
      */
     public function up()
     {
-        // Employes(Id, user_id, etat, solde)
         Schema::create('employes', function (Blueprint $table) {
             $table->biginteger('cin')->primary();
             $table->biginteger('user_id')->unsigned()->index();

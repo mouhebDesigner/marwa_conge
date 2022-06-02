@@ -12,11 +12,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // We must create new seeder class for this table okay UsersTableSeeder
-        // this file clear 
-        // N3abou table user gbal esa3a 
-        // TAaw n3abou table employe
-        //  $this->call(EmployesTableSeeder::class);
+     
 
         DB::table('users')->insert([
             [

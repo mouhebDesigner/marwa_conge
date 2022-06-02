@@ -6,10 +6,8 @@
     <div class="wrapper">
         @include('includes.header')
         @include('includes.aside')
-        <!-- Fel page hadhii nest7a9ou ykoun 3ena table lel affichage n'est ce pas ui
-        bien emala njiboha men tempalte mta3na choufi kifeh tab3inin -->
+     
         <div class="content-wrapper">
-        <!-- Pour afficher la message eon doit utiliser la fonction @session() dans blade 7adhra fel laravel choufi kifeh  -->
             @if(session('edit-message'))
             <div class="alert alert-info alert-dismissible">
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -33,7 +31,6 @@
                     <div class="col-sm-6">
                         <h1>Liste des employés</h1>
                     </div>
-                    <!-- tebloka  hataw nsaker w 3awdi connecti oku ok bien-->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
